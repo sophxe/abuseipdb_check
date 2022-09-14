@@ -39,4 +39,3 @@ def main():
     checkAbuseIPDB(suspect_ips)
 
 main()
-
