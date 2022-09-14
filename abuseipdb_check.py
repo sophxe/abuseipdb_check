@@ -30,9 +30,6 @@ def checkAbuseIPDB(suspect_ips):
 
         # format the output
         decodedResponse = json.loads(response.text)
-
-    #print(json.dumps(decodedResponse, sort_keys=True, indent=4))
-    
         print('IP address',decodedResponse['data']['ipAddress'],'has', decodedResponse['data']['totalReports'], 'reports')
 
 
