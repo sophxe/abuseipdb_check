@@ -1,6 +1,6 @@
 # abuseipdb_check
 
-A simple Python script which uses the AbuseIPDB API to check if an IP address is suspected to be malicious, and returns the number of times the IP has been reported.
+A simple Python script which uses the AbuseIPDB API to check if an IP address is suspected to be malicious, and returns the number of times the IP has been reported. The script is based off the [AbuseIPDB API documentation](https://docs.abuseipdb.com/?python#check-endpoint) and amended for my own lazy requirements. 
 
 The script takes an input of a file of a list of IP addresses for checking against the AbuseIPDB database. The file must be formatted with each IP address separated by a carriage return. An AbuseIPDB API key is required for it to work, which you can place inside the api_key variable.
 
