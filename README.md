@@ -8,8 +8,8 @@ The script is very simple and was just thrown together with the purpose of makin
 
 Sample output:
 
-IP address 123.123.123.123 has 618 reports\n
-IP address 123.123.123.124 has 127 reports\n
-IP address 123.123.123.125 has 450 reports\n
+IP address 123.123.123.123 has 618 reports  
+IP address 123.123.123.124 has 127 reports  
+IP address 123.123.123.125 has 450 reports  
 
 The script can easily be amended to return whichever JSON fields you like from the query made to AbuseIPDB, as the script returns the whole JSON object for a given IP address, and then just parses the output to what I needed to see.
