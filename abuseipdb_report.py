@@ -20,6 +20,7 @@ def readFile(file):
         return suspect_ips
         
 # this uses the input for categories to find the matching description in the categories dictionary
+# comment is converted back into a string for passing into the post_body
 def getComment(categories, categories_list):
     input_list = []
     for key, value in categories.items():
@@ -37,7 +38,6 @@ def reportAbuseIPDB(suspect_ips):
 	# suspect_categories = input(f'Enter categories separated by comma for IP address {ip} e.g. 18,20: ')
 	# need to convert to a list to iterate through with dictionary values.
             suspect_categories_list = suspect_categories.split(',')
-	# commented is converted back to a string for the post_body in the function
             comment = getComment(categories, suspect_categories_list)
         # if comment is still blank after requesting input, caused by an out of range issue, print warning message
             if comment == '':
