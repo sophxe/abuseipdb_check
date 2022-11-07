@@ -8,9 +8,9 @@ The script is very simple and was just thrown together with the purpose of makin
 
 Sample output:
 
-`IP address 123.123.123.123 has 618 reports  
-IP address 123.123.123.124 has 127 reports  
-IP address 123.123.123.125 has 450 reports`
+`IP address 123.123.123.123 has 618 reports`  
+`IP address 123.123.123.124 has 127 reports`  
+`IP address 123.123.123.125 has 450 reports`  
 
 The script can easily be amended to return whichever JSON fields you like from the query made to AbuseIPDB, as the script returns the whole JSON object for a given IP address, and then just parses the output to what I needed to see.
 
@@ -23,12 +23,10 @@ Like abuseipdb_check, it takes an input file of a list of IPs formatted with a c
 
 In the script you are required to input a category in numerical format from the list printed out. Multiple categories can be entered, separate by a comma as instructed
 
-Sample output - successful:
-
+Sample output - successful:  
 `IP address 123.123.123.123 reported for Web App Attack to AbuseIPDB`
 
-Sample output - error:
-
+Sample output - error:  
 `You can only report the same IP address (123.123.123.123) once in 15 minutes.`
 
 Again, script is easily modifiable to return whichever JSON fields are needed from the JSON response.
