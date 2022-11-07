@@ -23,10 +23,10 @@ Like abuseipdb_check, it takes an input file of a list of IPs formatted with a c
 
 In the script you are required to input a category in numerical format from the list printed out. Multiple categories can be entered, separate by a comma as instructed
 
-Sample output:
-
+Sample output - successful:
 IP address 123.123.123.123 reported for Web App Attack to AbuseIPDB
 
+Sample output - error:
 You can only report the same IP address (`123.123.123.123`) once in 15 minutes.
 
 Again, script is easily modifiable to return whichever JSON fields are needed from the JSON response.
