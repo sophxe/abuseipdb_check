@@ -26,6 +26,7 @@ In the script you are required to input a category in numerical format from the 
 Sample output:
 
 IP address 123.123.123.123 reported for Web App Attack to AbuseIPDB
+
 You can only report the same IP address (`123.123.123.123`) once in 15 minutes.
 
 Again, script is easily modifiable to return whichever JSON fields are needed from the JSON response.
