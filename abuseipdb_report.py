@@ -66,14 +66,16 @@ def reportAbuseIPDB(suspect_ips):
 		
         	
 # script logic
+
+if __name__ == "__main__":
         
-input_file = 'ips.txt'
-suspect_ips = readFile(input_file)
-print('_________________________________')
-print('Report an IP address to AbuseIPDB')
-print('_________________________________')
-print('\nCategories of abuse:\n')
-for key, value in categories.items():
-   print(key, '-', value)
+    input_file = 'ips.txt'
+    suspect_ips = readFile(input_file)
+    print('_________________________________')
+    print('Report an IP address to AbuseIPDB')
+    print('_________________________________')
+    print('\nCategories of abuse:\n')
+    for key, value in categories.items():
+       print(key, '-', value)
     
-reportAbuseIPDB(suspect_ips)
+    reportAbuseIPDB(suspect_ips)
