@@ -33,9 +33,7 @@ def checkAbuseIPDB(suspect_ips):
         print('IP address',decodedResponse['data']['ipAddress'],'has', decodedResponse['data']['totalReports'], 'reports')
 
 
-def main():
+if __name__ == "__main__":
     input_file = input('Enter filename here (list of IPs split by carriage return): ')
     suspect_ips = readFile(input_file)
     checkAbuseIPDB(suspect_ips)
-
-main()
